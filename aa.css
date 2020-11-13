@@ -1,0 +1,123 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+#nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0.5rem 0 0.5rem 0; */
+    /* position: absolute;
+    margin:15px 180px; */
+    overflow: hidden;
+    background-color:rgb(79, 143, 79,0.7) ;
+   /* z-index:100; */
+}
+.nav-links{
+    text-decoration: none;
+    padding: 2rem;
+    color: white;
+}
+.logo{
+    text-decoration: none;
+    padding-right: 5rem;
+    color:yellow;
+    font-size: 3rem;
+}
+.purporse{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  2rem 10rem 3rem 10rem;
+    background-color: rgba(79, 143, 79,0.7);
+    color: white;
+}
+button{
+    border:none;
+    text-align: center;
+}
+#part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0 3rem 0;    
+}
+.service-words{
+    padding: 0 10rem 0 10rem;
+}
+.services-container{
+display: grid;
+grid-template-columns: 20% 20% 20%;
+grid-gap: 3rem;
+justify-content: space-evenly;
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+padding: 0 0 2rem 0;
+}
+.services{
+    position: relative;
+}
+.text{
+    position: absolute;
+  bottom: 30px;
+  left: 10px;
+  margin:0 auto;
+  width:40%;
+  color:white;
+    background:  rgb(79, 143, 79);
+    background: rgba(79, 143, 79,0.7);
+    padding: 50px;
+}
+#part3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1596902362438-e8516a972fb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    
+    padding: 2rem 3rem 3rem 3rem;
+}
+.footer{
+    padding: 1rem 2rem 1rem 2rem; 
+    color: ivory;
+    font-weight: bold;
+}
+.end{
+    position: absolute;
+    right:0;
+    margin-top: 50px;
+}
+
+/* carousel */
+#part1{
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+.slider{
+    transition-timing-function: ease-in-out;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; 
+    /* animation-iteration-count: infinite; */
+    -webkit-animation-name: move;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    /* -webkit-animation-iteration-count: infinite; */
+}
+@keyframes move{
+    from  {opacity: 0.9}
+    to {opacity: 1}
+}
+@-webkit-keyframes move{
+    from  {opacity: 0.9}
+    to {opacity: 1}
+}
+.img{
+    display: none;
+}
